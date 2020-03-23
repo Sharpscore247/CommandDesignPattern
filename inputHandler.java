@@ -2,18 +2,23 @@ package CommandDesignPattern;
 /**
  * @author Tyron Schultz
  *
- *         Class to map different key words to commands
+ * Class to map different key words to commands
  *
  */
 import java.util.*;
 
-public class inputHandler {
+public class InputHandler {
 
   private HashMap<String, Command> map = new HashMap();
 
-  public inputHandler(Document doc) {
-    map.put("vishal", 10);
-    map.put("sachin", 30);
-    map.put("vaibhav", 20);
+  public InputHandler(Document doc) {
+    map.put("load", LoadCommand);
+    map.put("save", SaveCommand(doc));
+    map.put("spell", SpellCheckCommand(doc));
+    map.put("print", PrintCommand(doc));
+  }
+  
+  public void inputEntered(String data) {
+	  
   }
 }

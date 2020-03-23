@@ -23,7 +23,7 @@ public class LoadCommand implements Command {
    * Executes the load command
    */
   public void execute() {
-    doc.load;
+    doc.load();
   }
   
 }

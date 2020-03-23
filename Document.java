@@ -1,4 +1,4 @@
-package CommandDesignPattern
+package CommandDesignPattern;
 /**
  * The Document class holds all the functionality for 
  * a written document

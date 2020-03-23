@@ -7,13 +7,14 @@ package CommandDesignPattern;
  */
 import java.util.*;
 
-public class inputHandler {
+public class InputHandler {
 
   private HashMap<String, Command> map = new HashMap();
 
   public inputHandler(Document doc) {
-    map.put("vishal", 10);
-    map.put("sachin", 30);
-    map.put("vaibhav", 20);
+    map.put("load", LoadCommand());
+    map.put("save", SaveCommand());
+    map.put("spell", SpellCheckCommand());
+    map.put("print", PrintCommand());
   }
 }
